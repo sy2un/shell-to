@@ -26,7 +26,6 @@ function to(){
 		paths=(${runDir//// })
 		let countPath=${#paths[*]}
 		unset paths[$countPath]
-		echo ${paths[*]}
 
 		path=""
 		if [ $result -eq 0 ]; then
