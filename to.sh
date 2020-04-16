@@ -53,7 +53,6 @@ function to(){
 			do  
 				let index++
 				if [[ ${paths[$i]} == $dir ]]; then 
-					echo "找到 $countPath"
 					findFlag=true
 					break 1
 				fi
@@ -69,7 +68,6 @@ function to(){
 				do	
 					path=$path"../"
 				done
-				echo "$path"
 				cd $path
 			else
 				echo "cd: $dir: No such file or directory"
